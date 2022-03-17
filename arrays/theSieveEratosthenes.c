@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define N 20
+#define N 100
 
 int main(int argc, char* arhv[])
 {
@@ -23,6 +23,12 @@ int main(int argc, char* arhv[])
 		printf("%3d", sieve[i]);
 	}
 	printf("\n");
+	printf("Primary numbers:\n");
+	for (int i = 0; i < N; ++i)
+	{
+		if (sieve[i] == 0)
+			printf("%3d", i);
+	}
 
 	return 0;
 }
