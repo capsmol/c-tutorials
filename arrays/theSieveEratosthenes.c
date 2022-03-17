@@ -24,7 +24,7 @@ int main(int argc, char* arhv[])
 	}
 	printf("\n");
 	printf("Primary numbers:\n");
-	for (int i = 0; i < N; ++i)
+	for (int i = 2; i < N; ++i)
 	{
 		if (sieve[i] == 0)
 			printf("%3d", i);
