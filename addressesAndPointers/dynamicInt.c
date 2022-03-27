@@ -4,10 +4,10 @@
 int main(int argc, char* argv[])
 {
 	int N;
-	printf("Enter number\n");
-	// scanf("%d", &N);
-	printf("Size: %lu\n", sizeof(int)); // <--- for fun :)
-	for (int i = 0; i < 1000; i += 1)
+	printf("Enter number: \n");
+	scanf("%d", &N);
+	printf("Size: %lu\n", sizeof(NULL)); // <--- for fun :)
+	for (int i = 0; i < 10; i += 1)
 	{
 		char* A = malloc(N * sizeof(int));
 		if (A == NULL)
