@@ -9,13 +9,13 @@ int main(int argc, char* argv[])
 
 	int c;
 	
-	// while ((c = getchar()) != EOF)
-	// {
-	// 	if (c == ' ') ++count_spaces;
-	// 	if (c == '\t') ++count_tabs;
-	// 	if (c == '\n') ++count_end_line;
-	// }
-	// printf("spaces: %d, tabs: %d, end %d\n", count_spaces, count_tabs, count_end_line);
+	while ((c = getchar()) != EOF)
+	{
+		if (c == ' ') ++count_spaces;
+		if (c == '\t') ++count_tabs;
+		if (c == '\n') ++count_end_line;
+	}
+	printf("spaces: %d, tabs: %d, end %d\n", count_spaces, count_tabs, count_end_line);
 
 	while ((c = getchar()) != EOF)
 	{
